@@ -3433,7 +3433,7 @@ h1, h2, h3, h4, h5, h6, .section-title .sub-title, .price-tab .nav-link span, .t
   -ms-flex-pack: justify;
   justify-content: space-between; }
   .banner-inner h1 {
-    color: transparent;
+    /* color: transparent; */
     margin-right: 25px;
     -webkit-text-stroke: 1px;
     text-transform: uppercase;
@@ -3449,7 +3449,7 @@ h1, h2, h3, h4, h5, h6, .section-title .sub-title, .price-tab .nav-link span, .t
         font-size: 55px; } }
     @media only screen and (max-width: 575px) {
       .banner-inner h1 {
-        font-size: 45px; } }
+        font-size: 40px; } }
     @media only screen and (max-width: 479px) {
       .banner-inner h1 {
         margin-right: 0; } }
@@ -4653,7 +4653,14 @@ h1, h2, h3, h4, h5, h6, .section-title .sub-title, .price-tab .nav-link span, .t
   position: relative;
   margin-bottom: 30px; }
   .gallery-item img {
-    width: 100%; }
+    width: 100%;
+    height: 425px }
+    @media only screen and (max-width: 575px) {
+      .gallery-item img{
+        height: 225px;
+      }
+      
+    }  
   .gallery-item .gallery-content {
     top: 50%;
     left: 50%;
@@ -5068,6 +5075,18 @@ h1, h2, h3, h4, h5, h6, .section-title .sub-title, .price-tab .nav-link span, .t
     @media only screen and (max-width: 991px) {
       .contact-page-map iframe {
         height: 500px; } }
+
+.book-appointment{
+  /* margin: 5em 0 0 0; */
+  /* position: relative;
+  top: 5em; */
+}  
+
+input[type=date]{
+  font-weight: bold;
+  color: #000000;
+  font-weight: 400;
+}
 
 /*******************************************************/
 /******************* 15. Team Area *********************/
@@ -6197,9 +6216,16 @@ h1, h2, h3, h4, h5, h6, .section-title .sub-title, .price-tab .nav-link span, .t
   -ms-transform: translateY(40px);
   transform: translateY(40px); }
 
+/* .working-hour-container{
+  border: 1px solid red;
+} */
+
 .working-hour {
   z-index: 1;
-  position: relative; }
+  position: relative;
+  /* height: 95%; */
+}
+
   .working-hour::before {
     position: absolute;
     content: "";
@@ -6209,12 +6235,17 @@ h1, h2, h3, h4, h5, h6, .section-title .sub-title, .price-tab .nav-link span, .t
     top: 0;
     left: 0;
     opacity: 0.9;
-    background-color: black; }
+    background-color: black;
+  }
+
+
   @media only screen and (max-width: 479px) {
     .working-hour {
       padding-left: 25px;
       padding-right: 25px; } }
   .working-hour h3 {
+    position: relative;
+    top: 1em;
     font-size: 30px;
     color: #d6a354;
     text-transform: uppercase; }
@@ -6225,10 +6256,12 @@ h1, h2, h3, h4, h5, h6, .section-title .sub-title, .price-tab .nav-link span, .t
   .working-hour p {
     opacity: 0.6; }
   .working-hour table {
-    width: 100%; }
+    margin: 3em 0 0 0;
+    width: 100%;
+    line-height: 48px; }
     .working-hour table td {
       width: 50%;
-      font-weight: 500;
+      /* font-weight: 500; */
       padding-top: 8px; }
 
 .what-we-offer-three .services-shapes .shape-one {
@@ -6540,6 +6573,10 @@ h1, h2, h3, h4, h5, h6, .section-title .sub-title, .price-tab .nav-link span, .t
 /*******************************************************/
 /******************* 24. Main Footer *******************/
 /*******************************************************/
+
+.m-top-about, .m-top-services, .m-top-contact{
+  margin: 10px 0 0 0;
+}
 .footer-logo-newsletter {
   border: 1px solid rgba(255, 255, 255, 0.1); }
   @media only screen and (min-width: 992px) {
